@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXPERIENCE</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" >
+
+
+            function fun() {  
+  
+  
+               alert ("15 years of experience!");  
+            }  
+
+
+            
+      </script>       
+
+</head>
+<body>
+    <body background="https://media.tenor.com/images/3591c2101d0721d3a825a5f570931112/tenor.gif" repeat="none">
+   
+    <center><p> Click Me! </p></center>        
+      <form>  
+        <center> <input type = "button" value = "Click me" onclick = "fun();"/>  </center>
+      </form>       
+           
+    <div id="count_up_timer">00:00:00</div>
+      <button id="stop_count_up_timer" onclick="clearInterval(timerVariable)">Stop Time</button>
+      <script>
+        var timerVariable = setInterval(countUpTimer, 1000);
+var totalSeconds = 0;
+
+function countUpTimer() {
+  ++totalSeconds;
+  var hour = Math.floor(totalSeconds / 3600);
+  var minute = Math.floor((totalSeconds - hour * 3600) / 60);
+  var seconds = totalSeconds - (hour * 3600 + minute * 60);
+  document.getElementById("count_up_timer").innerHTML = hour + ":" + minute + ":" + seconds;
+}
+</script>   
+
+
+    
+</body>
+</html>
